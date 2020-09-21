@@ -2,9 +2,9 @@ request = require("request");
 
 
 const weather = (location, callback) => {
-    console.log(location);
+    // console.log(location);
     const url = "http://api.weatherstack.com/current?access_key=4f81e6e489634a98002597728d7b4ac3&query=" + location.latitute + ',' + location.longitude;
-    console.log(url);
+    // console.log(url);
     request({ url: url, json: true }, (error, response) => {
         // console.log(response);
         if (error) {
@@ -13,7 +13,6 @@ const weather = (location, callback) => {
         }
         else if (response.body.current === undefined) {
             callback("Please Enter a valid Location", undefined);
-            console.log(response.body);
 
         }
         else {
