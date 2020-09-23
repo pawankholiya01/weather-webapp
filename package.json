@@ -2,13 +2,16 @@
   "name": "weather-app",
   "version": "1.0.0",
   "description": "A location based weather application",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "nodemon": "^2.0.4"
   }
 }
