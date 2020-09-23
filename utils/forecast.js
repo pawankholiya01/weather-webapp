@@ -18,7 +18,8 @@ const weather = (location, callback) => {
         else {
             callback(undefined, {
                 temprature: response.body.current.temperature,
-                weather_despcription: response.body.current.weather_descriptions[0]
+                weather_despcription: response.body.current.weather_descriptions[0],
+                weather_location : response.body.location.name + " " + response.body.location.region + " " + response.body.location.country
             });
             // console.log(" Latitude is : ", response.body.features[0].center[1], "and Longitude is : ", response.body.features[0].center[0]);
         }
